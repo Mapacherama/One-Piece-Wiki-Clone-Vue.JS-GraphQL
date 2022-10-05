@@ -1,7 +1,7 @@
 <template lang="pug">
 #Home
   header
-    img.logo(src='https://myhappyagency.com/blog/wp-content/uploads/2019/12/vue-graphql-apollo.png')
+    img.logo(src='https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/2022/07/One-Piece-Symbol.png')
     h1 {{ pjson.name }}
     p {{ pjson.description }}
     a(href="https://github.com/guillaumeduhan/vue-apollo-graphql-boilerplate", target="_blank") Github
@@ -20,9 +20,9 @@ export default {
   },
   apollo: {
     // Simple query that will update the 'hello' vue property
-    hello: gql`query {
+    listOfCharacters: gql`query {
       listCharacters {
-        id
+        name
       }
     }`,
   },
@@ -31,10 +31,8 @@ export default {
       // Call to the graphql mutation
       const result = await this.$apollo.mutate({
         // Query
-        mutation: gql`mutation ($label: String!) {
-          addTag(label: $label) {
-            id
-            label
+        mutation: gql`mutation {
+          
           }
         }`,
         // Parameters
