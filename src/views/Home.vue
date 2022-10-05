@@ -4,7 +4,7 @@
     img.logo(src='https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/2022/07/One-Piece-Symbol.png')
     h1 {{ pjson.name }}
     p {{ pjson.description }}
-    a(href="https://github.com/guillaumeduhan/vue-apollo-graphql-boilerplate", target="_blank") Github
+    a(href="https://github.com/Mapacherama", target="_blank") Github
 </template>
 
 <script>
@@ -50,7 +50,16 @@ export default {
   .logo {
     max-width: 400px;
     margin: 30px 0;
-    background: #C32424;
+    background: #ffffff;  
   }
+  header{
+    color: $primary
+  }
+
+  a{
+    color: rgb(55, 37, 158);
+  }
+
 }
+
 </style>
